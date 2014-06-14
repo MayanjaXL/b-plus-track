@@ -1,5 +1,5 @@
 //
-//  mxlSecondViewController.h
+//  mxlProfile3TableViewController.h
 //  B+Track
 //
 //  Created by Fitti Weissglas on 11/06/2014.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface mxlSecondViewController : UIViewController
+@interface mxlProfile3TableViewController : UITableViewController
 
 @end

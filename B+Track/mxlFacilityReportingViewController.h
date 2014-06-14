@@ -1,5 +1,5 @@
 //
-//  mxlFirstViewController.h
+//  mxlFacilityReportingViewController.h
 //  B+Track
 //
 //  Created by Fitti Weissglas on 11/06/2014.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface mxlFirstViewController : UIViewController
+@interface mxlFacilityReportingViewController : UITableViewController
 
 @end

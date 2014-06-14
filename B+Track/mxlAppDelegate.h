@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MXLSession.h"
 
 @interface mxlAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) MXLSession* Session;
 
 @end

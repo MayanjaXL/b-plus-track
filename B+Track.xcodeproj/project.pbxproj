@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41047D5C1949910E00274D68 /* MXLDataRetriever.m in Sources */ = {isa = PBXBuildFile; fileRef = 41047D5B1949910E00274D68 /* MXLDataRetriever.m */; };
+		415D660A194B000C00B8B824 /* MXLReportingRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D6609194B000C00B8B824 /* MXLReportingRateViewController.m */; };
+		415D660D194B0B1E00B8B824 /* MXLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D660C194B0B1E00B8B824 /* MXLSession.m */; };
+		4164F8B81949B0CC002C518D /* MXLWeek.m in Sources */ = {isa = PBXBuildFile; fileRef = 4164F8B71949B0CC002C518D /* MXLWeek.m */; };
+		4164F8BB1949C3C2002C518D /* MXLWeekSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4164F8BA1949C3C2002C518D /* MXLWeekSelectionViewController.m */; };
+		418F1DD5194887AA00E1E8CD /* mxlProfile3TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418F1DD4194887AA00E1E8CD /* mxlProfile3TableViewController.m */; };
 		41EC83BA19483F8B00FEF658 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC83B919483F8B00FEF658 /* Foundation.framework */; };
 		41EC83BC19483F8B00FEF658 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC83BB19483F8B00FEF658 /* CoreGraphics.framework */; };
 		41EC83BE19483F8B00FEF658 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC83BD19483F8B00FEF658 /* UIKit.framework */; };
@@ -15,14 +21,17 @@
 		41EC83CA19483F8B00FEF658 /* mxlAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EC83C919483F8B00FEF658 /* mxlAppDelegate.m */; };
 		41EC83CD19483F8B00FEF658 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EC83CB19483F8B00FEF658 /* Main_iPhone.storyboard */; };
 		41EC83D019483F8B00FEF658 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EC83CE19483F8B00FEF658 /* Main_iPad.storyboard */; };
-		41EC83D319483F8B00FEF658 /* mxlFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EC83D219483F8B00FEF658 /* mxlFirstViewController.m */; };
-		41EC83D619483F8B00FEF658 /* mxlSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EC83D519483F8B00FEF658 /* mxlSecondViewController.m */; };
 		41EC83D819483F8B00FEF658 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41EC83D719483F8B00FEF658 /* Images.xcassets */; };
 		41EC83DF19483F8B00FEF658 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC83DE19483F8B00FEF658 /* XCTest.framework */; };
 		41EC83E019483F8B00FEF658 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC83B919483F8B00FEF658 /* Foundation.framework */; };
 		41EC83E119483F8B00FEF658 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC83BD19483F8B00FEF658 /* UIKit.framework */; };
 		41EC83E919483F8B00FEF658 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41EC83E719483F8B00FEF658 /* InfoPlist.strings */; };
 		41EC83EB19483F8B00FEF658 /* B_TrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EC83EA19483F8B00FEF658 /* B_TrackTests.m */; };
+		41EC83F71948499F00FEF658 /* mxlFacility.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EC83F61948499F00FEF658 /* mxlFacility.m */; };
+		41EC84411948554F00FEF658 /* mxlFacilityReportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EC84401948554F00FEF658 /* mxlFacilityReportingViewController.m */; };
+		41EC84441948654200FEF658 /* mxlEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EC84431948654200FEF658 /* mxlEntity.m */; };
+		41EC84481948663D00FEF658 /* MXLEntitySelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EC84471948663D00FEF658 /* MXLEntitySelectionViewController.m */; };
+		41EC84511948818400FEF658 /* MXLProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EC844D1948737000FEF658 /* MXLProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41047D5A1949910E00274D68 /* MXLDataRetriever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLDataRetriever.h; sourceTree = "<group>"; };
+		41047D5B1949910E00274D68 /* MXLDataRetriever.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLDataRetriever.m; sourceTree = "<group>"; };
+		415D6608194B000C00B8B824 /* MXLReportingRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLReportingRateViewController.h; sourceTree = "<group>"; };
+		415D6609194B000C00B8B824 /* MXLReportingRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLReportingRateViewController.m; sourceTree = "<group>"; };
+		415D660B194B0B1E00B8B824 /* MXLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLSession.h; sourceTree = "<group>"; };
+		415D660C194B0B1E00B8B824 /* MXLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLSession.m; sourceTree = "<group>"; };
+		4164F8B61949B0CC002C518D /* MXLWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLWeek.h; sourceTree = "<group>"; };
+		4164F8B71949B0CC002C518D /* MXLWeek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLWeek.m; sourceTree = "<group>"; };
+		4164F8B91949C3C2002C518D /* MXLWeekSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLWeekSelectionViewController.h; sourceTree = "<group>"; };
+		4164F8BA1949C3C2002C518D /* MXLWeekSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLWeekSelectionViewController.m; sourceTree = "<group>"; };
+		418F1DD3194887AA00E1E8CD /* mxlProfile3TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mxlProfile3TableViewController.h; sourceTree = "<group>"; };
+		418F1DD4194887AA00E1E8CD /* mxlProfile3TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mxlProfile3TableViewController.m; sourceTree = "<group>"; };
 		41EC83B619483F8B00FEF658 /* B+Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "B+Track.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EC83B919483F8B00FEF658 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41EC83BB19483F8B00FEF658 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,16 +69,22 @@
 		41EC83C919483F8B00FEF658 /* mxlAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mxlAppDelegate.m; sourceTree = "<group>"; };
 		41EC83CC19483F8B00FEF658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		41EC83CF19483F8B00FEF658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		41EC83D119483F8B00FEF658 /* mxlFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mxlFirstViewController.h; sourceTree = "<group>"; };
-		41EC83D219483F8B00FEF658 /* mxlFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mxlFirstViewController.m; sourceTree = "<group>"; };
-		41EC83D419483F8B00FEF658 /* mxlSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mxlSecondViewController.h; sourceTree = "<group>"; };
-		41EC83D519483F8B00FEF658 /* mxlSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mxlSecondViewController.m; sourceTree = "<group>"; };
 		41EC83D719483F8B00FEF658 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		41EC83DD19483F8B00FEF658 /* B+TrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "B+TrackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EC83DE19483F8B00FEF658 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		41EC83E619483F8B00FEF658 /* B+TrackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "B+TrackTests-Info.plist"; sourceTree = "<group>"; };
 		41EC83E819483F8B00FEF658 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41EC83EA19483F8B00FEF658 /* B_TrackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B_TrackTests.m; sourceTree = "<group>"; };
+		41EC83F51948499F00FEF658 /* mxlFacility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mxlFacility.h; sourceTree = "<group>"; };
+		41EC83F61948499F00FEF658 /* mxlFacility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mxlFacility.m; sourceTree = "<group>"; };
+		41EC843F1948554F00FEF658 /* mxlFacilityReportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mxlFacilityReportingViewController.h; sourceTree = "<group>"; };
+		41EC84401948554F00FEF658 /* mxlFacilityReportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mxlFacilityReportingViewController.m; sourceTree = "<group>"; };
+		41EC84421948654200FEF658 /* mxlEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mxlEntity.h; sourceTree = "<group>"; };
+		41EC84431948654200FEF658 /* mxlEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mxlEntity.m; sourceTree = "<group>"; };
+		41EC84461948663D00FEF658 /* MXLEntitySelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLEntitySelectionViewController.h; sourceTree = "<group>"; };
+		41EC84471948663D00FEF658 /* MXLEntitySelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLEntitySelectionViewController.m; sourceTree = "<group>"; };
+		41EC844C1948737000FEF658 /* MXLProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLProfileViewController.h; sourceTree = "<group>"; };
+		41EC844D1948737000FEF658 /* MXLProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +111,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41047D59194990F600274D68 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				41047D5A1949910E00274D68 /* MXLDataRetriever.h */,
+				41047D5B1949910E00274D68 /* MXLDataRetriever.m */,
+				415D660B194B0B1E00B8B824 /* MXLSession.h */,
+				415D660C194B0B1E00B8B824 /* MXLSession.m */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
 		41EC83AD19483F8B00FEF658 = {
 			isa = PBXGroup;
 			children = (
@@ -117,16 +155,15 @@
 		41EC83BF19483F8B00FEF658 /* B+Track */ = {
 			isa = PBXGroup;
 			children = (
+				41047D59194990F600274D68 /* Misc */,
+				41EC83F41948497D00FEF658 /* Data Models */,
 				41EC83C819483F8B00FEF658 /* mxlAppDelegate.h */,
 				41EC83C919483F8B00FEF658 /* mxlAppDelegate.m */,
 				41EC83CB19483F8B00FEF658 /* Main_iPhone.storyboard */,
 				41EC83CE19483F8B00FEF658 /* Main_iPad.storyboard */,
-				41EC83D119483F8B00FEF658 /* mxlFirstViewController.h */,
-				41EC83D219483F8B00FEF658 /* mxlFirstViewController.m */,
-				41EC83D419483F8B00FEF658 /* mxlSecondViewController.h */,
-				41EC83D519483F8B00FEF658 /* mxlSecondViewController.m */,
 				41EC83D719483F8B00FEF658 /* Images.xcassets */,
 				41EC83C019483F8B00FEF658 /* Supporting Files */,
+				41EC84451948661500FEF658 /* Controllers */,
 			);
 			path = "B+Track";
 			sourceTree = "<group>";
@@ -158,6 +195,38 @@
 				41EC83E719483F8B00FEF658 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41EC83F41948497D00FEF658 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				41EC83F51948499F00FEF658 /* mxlFacility.h */,
+				41EC83F61948499F00FEF658 /* mxlFacility.m */,
+				41EC84421948654200FEF658 /* mxlEntity.h */,
+				41EC84431948654200FEF658 /* mxlEntity.m */,
+				4164F8B61949B0CC002C518D /* MXLWeek.h */,
+				4164F8B71949B0CC002C518D /* MXLWeek.m */,
+			);
+			name = "Data Models";
+			sourceTree = "<group>";
+		};
+		41EC84451948661500FEF658 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				41EC843F1948554F00FEF658 /* mxlFacilityReportingViewController.h */,
+				41EC84401948554F00FEF658 /* mxlFacilityReportingViewController.m */,
+				41EC84461948663D00FEF658 /* MXLEntitySelectionViewController.h */,
+				41EC84471948663D00FEF658 /* MXLEntitySelectionViewController.m */,
+				41EC844C1948737000FEF658 /* MXLProfileViewController.h */,
+				41EC844D1948737000FEF658 /* MXLProfileViewController.m */,
+				418F1DD3194887AA00E1E8CD /* mxlProfile3TableViewController.h */,
+				418F1DD4194887AA00E1E8CD /* mxlProfile3TableViewController.m */,
+				4164F8B91949C3C2002C518D /* MXLWeekSelectionViewController.h */,
+				4164F8BA1949C3C2002C518D /* MXLWeekSelectionViewController.m */,
+				415D6608194B000C00B8B824 /* MXLReportingRateViewController.h */,
+				415D6609194B000C00B8B824 /* MXLReportingRateViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +328,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41EC83D619483F8B00FEF658 /* mxlSecondViewController.m in Sources */,
+				41EC84411948554F00FEF658 /* mxlFacilityReportingViewController.m in Sources */,
+				41EC83F71948499F00FEF658 /* mxlFacility.m in Sources */,
+				415D660A194B000C00B8B824 /* MXLReportingRateViewController.m in Sources */,
+				41EC84441948654200FEF658 /* mxlEntity.m in Sources */,
+				4164F8B81949B0CC002C518D /* MXLWeek.m in Sources */,
+				415D660D194B0B1E00B8B824 /* MXLSession.m in Sources */,
+				4164F8BB1949C3C2002C518D /* MXLWeekSelectionViewController.m in Sources */,
 				41EC83CA19483F8B00FEF658 /* mxlAppDelegate.m in Sources */,
-				41EC83D319483F8B00FEF658 /* mxlFirstViewController.m in Sources */,
+				41EC84481948663D00FEF658 /* MXLEntitySelectionViewController.m in Sources */,
+				418F1DD5194887AA00E1E8CD /* mxlProfile3TableViewController.m in Sources */,
+				41047D5C1949910E00274D68 /* MXLDataRetriever.m in Sources */,
+				41EC84511948818400FEF658 /* MXLProfileViewController.m in Sources */,
 				41EC83C619483F8B00FEF658 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +478,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "B+Track/B+Track-Prefix.pch";
 				INFOPLIST_FILE = "B+Track/B+Track-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -413,6 +492,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "B+Track/B+Track-Prefix.pch";
 				INFOPLIST_FILE = "B+Track/B+Track-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -477,6 +557,7 @@
 				41EC83F019483F8B00FEF658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41EC83F119483F8B00FEF658 /* Build configuration list for PBXNativeTarget "B+TrackTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +566,7 @@
 				41EC83F319483F8B00FEF658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
