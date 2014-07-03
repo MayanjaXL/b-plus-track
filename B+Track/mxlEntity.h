@@ -17,4 +17,8 @@
 - (id) initWithName:(NSString *)name type:(NSString*)type level:(NSString*)level;
 
 
++ (NSString*) prettifyForDistrict:(NSString*) district;
++ (NSString*) prettifyForIP:(NSString*) ip;
+
+
 @end

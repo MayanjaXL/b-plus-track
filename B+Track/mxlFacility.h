@@ -10,13 +10,28 @@
 
 @interface MXLFacility : NSObject
 
+/*
 @property (strong,nonatomic) NSString *name;
 @property (strong,nonatomic) NSString *level;
-@property (strong,nonatomic) NSString *district;
-@property (strong,nonatomic) NSString *subcounty;
+//@property (strong,nonatomic) NSString *district;
+//@property (strong,nonatomic) NSString *subcounty;
 @property (strong,nonatomic) NSString *ip;
+@property bool artAccredited;
+@property NSString* wareHouse; */
 
-- (id) initWithName:(NSString *)name level:(NSString*)level district:(NSString*)district subcounty:(NSString*)subcounty ip:(NSString*)ip;
+/* Auto-generated properties */
+@property NSString* organisationunitid;
+@property NSString* health_facility;
+@property NSString* subcounty;
+@property NSString* district;
+@property NSString* org_unit_group;
+@property NSString* art_accredited;
+@property NSString* facility_level;
+@property NSString* delivery_zone;
+@property NSString* region;
+@property NSString* reported;
+
+
 
 
 @end

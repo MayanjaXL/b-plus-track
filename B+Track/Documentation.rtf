@@ -1,0 +1,444 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green128\blue0;\red0\green0\blue255;\red163\green21\blue21;
+\red43\green131\blue159;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid1\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 MXLListTableViewController\
+\
+Must override:\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	
+\f1 \uc0\u9642 
+\f0 	}initWithName \'96\'a0\
+{\listtext	
+\f1 \uc0\u9642 
+\f0 	}viewDidLoad \'96\'a0to set the details segue, the observer name to listen to when data has finished loading, and the no data text. Also to set the cell text and detail text, and any categorisation properties, if any\
+{\listtext	
+\f1 \uc0\u9642 
+\f0 	}viewWillAppear \'96 not necessary\
+{\listtext	
+\f1 \uc0\u9642 
+\f0 	}loadLaunchData \'96\'a0must be overridden. Gets called when it is time to assign the datasource.\
+{\listtext	
+\f1 \uc0\u9642 
+\f0 	}\
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\
+// Back up code\
+\
+\pard\tx529\pardeftab529\pardirnatural
+
+\f2\fs22 \cf2 \CocoaLigature0 //\cf0 \
+\cf2 //  mxlFacilityReportingViewController.m\cf0 \
+\cf2 //  B+Track\cf0 \
+\cf2 //\cf0 \
+\cf2 //  Created by Fitti Weissglas on 11/06/2014.\cf0 \
+\cf2 //  Copyright (c) 2014 MXL. All rights reserved.\cf0 \
+\cf2 //\cf0 \
+\
+\cf3 #import \cf4 "MXLFacilityListVC.h"\cf3 \
+#import \cf4 "MXLFacility.h"\cf3 \
+#import \cf4 "MXLSession.h"\cf3 \
+#import \cf4 "MXLDataRetriever.h"\cf3 \
+#import \cf4 "MXLFacilityDetailsVC.h"\cf3 \
+\cf0 \
+\
+\cf3 @implementation\cf0  MXLFacilityListVC\
+\
+\cf5 NSMutableArray\cf0 * facilities;\
+\cf5 NSMutableArray\cf0 * searchResultFacilities;\
+\cf5 NSMutableDictionary\cf0 * districts;\
+\cf5 NSMutableArray\cf0 * sortedDistricts;\
+\cf5 MXLFacility\cf0 * selectedFacility;\
+\cf5 NSArray\cf0 * categories;\
+\
+\cf2 /* initWithStyle\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf3 id\cf0 )initWithStyle:(\cf5 UITableViewStyle\cf0 )style\
+\{\
+    \cf3 self\cf0  = [\cf3 super\cf0  \cf5 initWithStyle\cf0 :style];\
+    \cf3 if\cf0  (\cf3 self\cf0 ) \{\
+        \cf2 // Custom initialization\cf0 \
+    \}\
+    \cf3 return\cf0  \cf3 self\cf0 ;\
+\}\
+\
+\cf2 /* viewDidLoad\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf3 void\cf0 )viewDidLoad\
+\{\
+    \
+    \cf3 self\cf0 .\cf5 txtSearch\cf0 .\cf5 delegate\cf0  = \cf3 self\cf0 ;\
+    \
+    \
+    \cf2 // Clear if not empty\cf0 \
+    \cf3 if\cf0  (\cf5 facilities\cf0  != \cf3 nil\cf0 ) \{\
+        \cf5 facilities\cf0  = \cf3 nil\cf0 ;\
+        [\cf3 self\cf0 .\cf5 tableView\cf0  \cf5 reloadData\cf0 ];\
+    \}\
+    \
+    \cf3 switch\cf0  (\cf3 self\cf0 .\cf5 facilitiesToShow\cf0 ) \{\
+        \cf3 case\cf0  \cf5 Entity\cf0 : \{\
+            \cf3 self\cf0 ->\cf5 observerName\cf0  = \cf4 @"facilities"\cf0 ;\
+            \cf3 self\cf0 .\cf5 uiHeader\cf0 .\cf5 title\cf0  = \cf4 @"Facilities"\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+        \cf3 case\cf0  \cf5 FacilitiesReported\cf0 : \{\
+            \cf3 self\cf0 ->\cf5 observerName\cf0  = \cf4 @"facilities_reported"\cf0 ;\
+            \cf3 self\cf0 .\cf5 uiHeader\cf0 .\cf5 title\cf0  = \cf4 @"Facilities that reported"\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+        \cf3 case\cf0  \cf5 FacilitiesNotReported\cf0 : \{\
+            \cf3 self\cf0 ->\cf5 observerName\cf0  = \cf4 @"facilities_not_reported"\cf0 ;\
+            \cf3 self\cf0 .\cf5 uiHeader\cf0 .\cf5 title\cf0  = \cf4 @"Facilities that did not report"\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+        \cf3 case\cf0  \cf5 NoARVS\cf0  : \{\
+            \cf3 self\cf0 ->\cf5 observerName\cf0  = \cf4 @"stock_outs"\cf0 ;\
+            \cf3 self\cf0 .\cf5 uiHeader\cf0 .\cf5 title\cf0  = \cf4 @"Facilities reporting no ARVs"\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+        \cf3 case\cf0  \cf5 NoTestkits\cf0  : \{\
+            \cf3 self\cf0 ->\cf5 observerName\cf0  = \cf4 @"stock_outs"\cf0 ;\
+            \cf3 self\cf0 .\cf5 uiHeader\cf0 .\cf5 title\cf0  = \cf4 @"Facilities reporting no testkits"\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+    \}\
+    [\cf3 super\cf0  \cf5 viewDidLoad\cf0 ];\
+    \
+    \
+\}\
+\
+\cf2 /* didReceiveMemoryWarning\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf3 void\cf0 )didReceiveMemoryWarning\
+\{\
+    [\cf3 super\cf0  \cf5 didReceiveMemoryWarning\cf0 ];\
+    \cf2 // Dispose of any resources that can be recreated.\cf0 \
+\}\
+\
+\cf3 #pragma mark Data Loading\
+\cf0 \
+\cf2 /* launchLoadData\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf3 void\cf0 ) launchLoadData \{\
+    \
+    [\cf3 super\cf0  \cf5 launchLoadData\cf0 ];\
+    \cf5 NSMutableArray\cf0 * facilities2;\
+    \
+    \cf3 switch\cf0  (\cf3 self\cf0 .\cf5 facilitiesToShow\cf0 ) \{\
+        \cf3 case\cf0  \cf5 Entity\cf0 : \{\
+            facilities2 = [\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ].\cf5 facilities\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+        \cf3 case\cf0  \cf5 FacilitiesReported\cf0 : \{\
+            facilities2 = [\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ].\cf5 facilitiesReported\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+        \cf3 case\cf0  \cf5 FacilitiesNotReported\cf0 : \{\
+            facilities2 = [\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ].\cf5 facilitiesNotReported\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+        \cf3 case\cf0  \cf5 NoARVS\cf0 : \{\
+            facilities2 = [\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ].\cf5 facilitiesNoARVs\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+        \cf3 case\cf0  \cf5 NoTestkits\cf0 : \{\
+            facilities2 = [\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ].\cf5 facilitiesNoTestkits\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+    \}\
+    \
+    \
+    \cf2 // Data already loaded \'96 no need to do anything\cf0 \
+    \cf3 if\cf0  (facilities2 != \cf3 nil\cf0 ) \{\
+        \cf3 @synchronized\cf0  (\cf3 self\cf0 ) \{\
+            [\cf3 self\cf0  \cf5 assignFacilities\cf0 ];\
+            [\cf3 self\cf0 .\cf5 tableView\cf0  \cf5 reloadData\cf0 ];\
+        \}\
+    \}\
+    \cf2 // Initiate a background load event, and see where it will go.\cf0 \
+    \cf3 else\cf0  \{\
+        [\cf3 self\cf0  \cf5 startSpinner\cf0 ];\
+        \cf2 // Initiate a week number load background\cf0 \
+        [\cf5 MXLDataRetriever\cf0 .\cf5 Queue\cf0  \cf5 addOperationWithBlock\cf0 :^\{\
+            \cf3 switch\cf0  (\cf3 self\cf0 .\cf5 facilitiesToShow\cf0 ) \{\
+                \cf3 case\cf0  \cf5 Entity\cf0 : \{\
+                    [[\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ] \cf5 loadFacilities\cf0 ];\
+                    \cf3 break\cf0 ;\
+                \}\
+                \cf3 case\cf0  \cf5 FacilitiesReported\cf0 : \{\
+                    [[\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ] \cf5 loadFacilitiesReported\cf0 ];\
+                    \cf3 break\cf0 ;\
+                \}\
+                \cf3 case\cf0  \cf5 FacilitiesNotReported\cf0 : \{\
+                    [[\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ] \cf5 loadFacilitiesNotReported\cf0 ];\
+                    \cf3 break\cf0 ;\
+                \}\
+                \cf3 case\cf0  \cf5 NoARVS\cf0 : \{\
+                    [[\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ] \cf5 loadFacilitiesWithStockouts\cf0 ];\
+                    \cf3 break\cf0 ;\
+                \}\
+                \cf3 case\cf0  \cf5 NoTestkits\cf0 : \{\
+                    [[\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ] \cf5 loadFacilitiesWithStockouts\cf0 ];\
+                    \cf3 break\cf0 ;\
+                \}\
+            \}\
+        \}];\
+    \}\
+\}\
+\
+\cf2 /* dataLoadSuccessNotification\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf3 void\cf0 ) dataLoadSuccessNotification:(\cf5 NSNotification\cf0  *) notification \{\
+    \
+    [[\cf5 NSOperationQueue\cf0  \cf5 mainQueue\cf0 ] \cf5 addOperationWithBlock\cf0 :^\{\
+        [\cf3 self\cf0  \cf5 stopSpinner\cf0 ];\
+        \
+        \cf3 @synchronized\cf0  (\cf3 self\cf0 ) \{\
+            [\cf3 self\cf0  \cf5 assignFacilities\cf0 ];\
+            [\cf3 self\cf0 .\cf5 tableView\cf0  \cf5 reloadData\cf0 ];\
+        \}\
+    \}];\
+\}\
+\
+\cf2 /* assignFacilities\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf3 void\cf0 ) assignFacilities \{\
+    \
+    \cf3 switch\cf0  (\cf3 self\cf0 .\cf5 facilitiesToShow\cf0 ) \{\
+        \cf3 case\cf0  \cf5 Entity\cf0 : \{\
+            \cf5 facilities\cf0  = [\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ].\cf5 facilities\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+        \cf3 case\cf0  \cf5 FacilitiesReported\cf0 : \{\
+            \cf5 facilities\cf0  = [\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ].\cf5 facilitiesReported\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+        \cf3 case\cf0  \cf5 FacilitiesNotReported\cf0 : \{\
+            \cf5 facilities\cf0  = [\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ].\cf5 facilitiesNotReported\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+        \cf3 case\cf0  \cf5 NoARVS\cf0 : \{\
+            \cf5 facilities\cf0  = [\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ].\cf5 facilitiesNoARVs\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+        \cf3 case\cf0  \cf5 NoTestkits\cf0 : \{\
+            \cf5 facilities\cf0  = [\cf5 MXLSession\cf0  \cf5 currentSession\cf0 ].\cf5 facilitiesNoTestkits\cf0 ;\
+            \cf3 break\cf0 ;\
+        \}\
+    \}\
+\}\
+\
+\cf2 /* dataLoadFailNotification\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf3 void\cf0 ) dataLoadFailNotification:(\cf5 NSNotification\cf0  *) notification \{\
+    \
+    [[\cf5 NSOperationQueue\cf0  \cf5 mainQueue\cf0 ]  \cf5 addOperationWithBlock\cf0 :^\{\
+        [\cf3 self\cf0  \cf5 stopSpinner\cf0 ];\
+        \
+        \cf5 UIAlertView\cf0  *alert = [[\cf5 UIAlertView\cf0  \cf5 alloc\cf0 ]\
+                              \cf5 initWithTitle\cf0 :\cf4 @"Unable to load the facilities. Please verify that you have an active Internet connection and try again."\cf0  \cf5 message\cf0 :\cf3 nil\cf0  \cf5 delegate\cf0 :\cf3 nil\cf0 \
+                              \cf5 cancelButtonTitle\cf0 :\cf3 nil\cf0  \cf5 otherButtonTitles\cf0 :\cf4 @"OK"\cf0 , \cf3 nil\cf0 ];\
+        [alert \cf5 show\cf0 ];\
+        \cf3 self\cf0 .\cf5 lblNoFacilities\cf0 .\cf5 text\cf0  = \cf4 @"Error while loading facilities."\cf0 ;\
+        [\cf3 self\cf0 .\cf5 navigationController\cf0  \cf5 popViewControllerAnimated\cf0 :\cf3 TRUE\cf0 ];\
+\
+    \}];\
+\}\
+\
+\cf2 /* prepareForSegue\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf3 void\cf0 )prepareForSegue:(\cf5 UIStoryboardSegue\cf0  *)segue sender:(\cf3 id\cf0 )sender\
+\{\
+    \cf2 // Check the segue identifier\cf0 \
+    \cf3 if\cf0  ([[segue \cf5 identifier\cf0 ] \cf5 isEqualToString\cf0 :\cf4 @"FacilityDetails"\cf0 ])\
+    \{\
+        \cf2 // Get a reference to your custom view controller\cf0 \
+        \
+        \cf5 MXLFacilityDetailsVC\cf0  *customViewController = (\cf5 MXLFacilityDetailsVC\cf0  *) [(\cf5 UINavigationController\cf0 *) segue.\cf5 destinationViewController\cf0  \cf5 viewControllers\cf0 ][0];\
+        \cf2 // Set your custom view controller's delegate\cf0 \
+        \cf2 //customViewController.delegate = self;\cf0 \
+        \cf5 NSIndexPath\cf0 * indexPath = [\cf3 self\cf0 .\cf5 tableView\cf0  \cf5 indexPathForCell\cf0 :sender];\
+        customViewController.\cf5 facility\cf0  = [[\cf5 districts\cf0  \cf5 valueForKey\cf0 :\cf5 categories\cf0 [indexPath.\cf5 section\cf0 ]] \cf5 objectAtIndex\cf0 :indexPath.\cf5 row\cf0 ];\
+    \}\
+\}\
+\
+\cf3 #pragma mark - Table view data source\
+\cf0 \
+\cf2 /* CreateCategories\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+\
+- (\cf3 void\cf0 ) createCategories \{\
+    \
+    \cf3 BOOL\cf0  found;\
+    \cf5 districts\cf0  = [\cf5 NSMutableDictionary\cf0  \cf5 new\cf0 ];\
+    \
+    \cf3 if\cf0  (\cf5 facilities\cf0  == \cf3 nil\cf0 ) \{\
+        \cf2 //self.lblNoFacilities.text = @"Error while loading facilities.";\cf0 \
+        \cf3 return\cf0 ;\
+    \}\
+    \cf3 else\cf0  \cf3 if\cf0  (\cf5 facilities\cf0 .\cf5 count\cf0  == 0) \{\
+        \cf3 self\cf0 .\cf5 lblNoFacilities\cf0 .\cf5 text\cf0  = \cf4 @"There are no facilities."\cf0 ;\
+        \cf3 return\cf0 ;\
+    \}\
+    \cf3 else\cf0  \{\
+        \cf3 self\cf0 .\cf5 lblNoFacilities\cf0 .\cf5 text\cf0  = \cf4 @""\cf0 ;\
+    \}\
+    \cf2 //    self.lblNoFacilities.text = [NSString stringWithFormat:@"Showng %d", self.facilitiesToShow];\cf0 \
+    \
+    \cf2 // Loop through the books and create our keys\cf0 \
+    \cf3 for\cf0  (\cf5 MXLFacility\cf0  *facility \cf3 in\cf0  \cf5 facilities\cf0 )\
+    \{\
+        \cf5 NSString\cf0  *c = facility.\cf5 district\cf0 ;\
+        found = \cf3 NO\cf0 ;\
+        \cf3 for\cf0  (\cf5 NSString\cf0  *str \cf3 in\cf0  [\cf5 districts\cf0  \cf5 allKeys\cf0 ]) \{\
+            \cf3 if\cf0  ([str \cf5 isEqualToString\cf0 :c]) \{\
+                found = \cf3 YES\cf0 ;\
+            \}\
+        \}\
+        \cf3 if\cf0  (!found) \{\
+            [\cf5 districts\cf0  \cf5 setValue\cf0 :[[\cf5 NSMutableArray\cf0  \cf5 alloc\cf0 ] \cf5 init\cf0 ] \cf5 forKey\cf0 :c];\
+        \}\
+    \}\
+    \
+    \cf5 NSArray\cf0  *sortedKeys = [[\cf5 districts\cf0  \cf5 allKeys\cf0 ] \cf5 sortedArrayUsingSelector\cf0 : \cf3 @selector\cf0 (compare:)];\
+    \cf5 categories\cf0  = sortedKeys;\
+    \cf5 NSMutableArray\cf0  *sortedValues = [\cf5 NSMutableArray\cf0  \cf5 array\cf0 ];\
+    \cf3 for\cf0  (\cf5 NSString\cf0  *key \cf3 in\cf0  sortedKeys) \{\
+        [sortedValues \cf5 addObject\cf0 : [\cf5 districts\cf0  \cf5 objectForKey\cf0 : key]];\
+    \}\
+    \cf5 sortedDistricts\cf0  = sortedValues;\
+    \
+    \cf3 for\cf0  (\cf5 MXLFacility\cf0  *facility \cf3 in\cf0  \cf5 facilities\cf0 ) \{\
+        [[\cf5 districts\cf0  \cf5 objectForKey\cf0 :facility.\cf5 district\cf0 ] \cf5 addObject\cf0 :facility];\
+    \}\
+    \
+\
+\}\
+\
+\cf2 /* numberOfSectionsInTableView\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf5 NSInteger\cf0 )numberOfSectionsInTableView:(\cf5 UITableView\cf0  *)tableView \{\
+    [\cf3 self\cf0  \cf5 createCategories\cf0 ];\
+    \cf3 if\cf0  (\cf5 facilities\cf0  == \cf3 nil\cf0 )\
+        \cf3 return\cf0  0;\
+    \
+    \cf3 return\cf0  [[\cf5 districts\cf0  \cf5 allKeys\cf0 ] \cf5 count\cf0 ];\
+\}\
+\
+\cf2 /* titleForHeaderInSection\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf5 NSString\cf0  *)tableView:(\cf5 UITableView\cf0  *)tableView titleForHeaderInSection:(\cf5 NSInteger\cf0 )section \{\
+    \
+    \cf2 //    NSString* districtName = sortedDistricts[section];\cf0 \
+    \cf2 //return [districts objectForKey:<#(id)#>\cf0 \
+    \cf3 return\cf0  \cf5 categories\cf0 [section];\
+    \cf2 //        return [[districts allKeys] objectAtIndex:section];\cf0 \
+\}\
+\
+\cf2 /* numberOfRowsInSection\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf5 NSInteger\cf0 )tableView:(\cf5 UITableView\cf0  *)tableView numberOfRowsInSection:(\cf5 NSInteger\cf0 )section \{\
+    \
+    \cf3 if\cf0  (\cf5 facilities\cf0  == \cf3 nil\cf0 )\
+        \cf3 return\cf0  0;\
+    \cf3 return\cf0  [[\cf5 districts\cf0  \cf5 valueForKey\cf0 :\cf5 categories\cf0 [section]] \cf5 count\cf0 ];\
+            \cf2 //    return [[districts valueForKey:[[districts allKeys] objectAtIndex:section]] count];\cf0 \
+\}\
+\
+\cf2 /* cellForRowAtIndexPath\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf5 UITableViewCell\cf0  *)tableView:(\cf5 UITableView\cf0  *)tableView cellForRowAtIndexPath:(\cf5 NSIndexPath\cf0  *)indexPath \{\
+    \cf5 UITableViewCell\cf0  *cell = [tableView \cf5 dequeueReusableCellWithIdentifier\cf0 :\cf4 @"FacilityCell"\cf0  \cf5 forIndexPath\cf0 :indexPath];\
+\
+    \cf2 ///    return [ count];\cf0 \
+    \cf5 MXLFacility\cf0  *facility = [[\cf5 districts\cf0  \cf5 valueForKey\cf0 :\cf5 categories\cf0 [indexPath.\cf5 section\cf0 ]] \cf5 objectAtIndex\cf0 :indexPath.\cf5 row\cf0 ];\
+    \cf2 //    MXLFacility *facility = [[districts valueForKey:[[districts allKeys] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];\cf0 \
+    cell.\cf5 textLabel\cf0 .\cf5 text\cf0  = facility.\cf5 health_facility\cf0 ;\
+    cell.\cf5 detailTextLabel\cf0 .\cf5 text\cf0  = facility.\cf5 district\cf0 ;\
+    \cf3 return\cf0  cell;\
+\}\
+\
+\cf2 /* accessoryButtonTappedForRowWithIndexPath\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf3 void\cf0 )tableView:(\cf5 UITableView\cf0  *)tableView accessoryButtonTappedForRowWithIndexPath:(\cf5 NSIndexPath\cf0  *)indexPath\{\
+\
+    \cf5 selectedFacility\cf0  = [[\cf5 districts\cf0  \cf5 valueForKey\cf0 :\cf5 categories\cf0 [indexPath.\cf5 section\cf0 ]] \cf5 objectAtIndex\cf0 :indexPath.\cf5 row\cf0 ];\
+\}\
+\
+\cf2 /* searchBarSearchButtonClicked\
+ _____________________________________________________________________________________________________________________________ */\cf0 \
+\
+- (\cf3 void\cf0 ) searchBarSearchButtonClicked:(\cf5 UISearchBar\cf0  *)searchBar \{\
+\
+    [searchBar \cf5 resignFirstResponder\cf0 ];\
+    [\cf3 self\cf0 .\cf5 tableView\cf0  \cf5 reloadData\cf0 ];\
+    \
+\}\
+\
+\
+\cf3 @end\cf0 \
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \CocoaLigature1 \
+\
+\
+\pard\tx529\pardeftab529\pardirnatural
+
+\f2\fs22 \cf2 \CocoaLigature0 //\cf0 \
+\cf2 //  mxlFacilityReportingViewController.h\cf0 \
+\cf2 //  B+Track\cf0 \
+\cf2 //\cf0 \
+\cf2 //  Created by Fitti Weissglas on 11/06/2014.\cf0 \
+\cf2 //  Copyright (c) 2014 MXL. All rights reserved.\cf0 \
+\cf2 //\cf0 \
+\
+\cf3 #import \cf4 <UIKit/UIKit.h>\cf3 \
+#import \cf4 "MXLTableViewController.h"\cf3 \
+\cf0 \
+\cf3 typedef\cf0  \cf3 enum\cf0  F \{\
+    Entity,\
+    FacilitiesReported,\
+    FacilitiesNotReported,\
+    NoARVS,\
+    NoTestkits\
+    \
+\} FacilitiesToShow;\
+\
+\cf3 @interface\cf0  MXLFacilityListVC : \cf5 MXLTableViewController\cf0 \
+\
+\cf3 @property\cf0  \cf5 FacilitiesToShow\cf0  facilitiesToShow;\
+\cf3 @property\cf0  (\cf3 weak\cf0 , \cf3 nonatomic\cf0 ) \cf3 IBOutlet\cf0  \cf5 UINavigationItem\cf0  *uiHeader;\
+\
+\
+- (\cf3 void\cf0 ) createCategories;\
+\cf3 @property\cf0  (\cf3 weak\cf0 , \cf3 nonatomic\cf0 ) \cf3 IBOutlet\cf0  \cf5 UISearchBar\cf0  *txtSearch;\
+\cf3 @property\cf0  (\cf3 weak\cf0 , \cf3 nonatomic\cf0 ) \cf3 IBOutlet\cf0  \cf5 UILabel\cf0  *lblNoFacilities;\
+\
+\cf3 @end\cf0 \
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \CocoaLigature1 \
+}

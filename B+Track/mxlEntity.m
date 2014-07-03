@@ -21,5 +21,18 @@
     return self;
 }
 
++ (NSString*) prettifyForDistrict:(NSString*) district {
+    
+    return [district stringByReplacingOccurrencesOfString:@" District" withString:@""];
+}
+
+
++ (NSString*) prettifyForIP:(NSString*) ip {
+    
+    return [[ip stringByReplacingOccurrencesOfString:@"PMTCT Option B+ " withString:@""] stringByReplacingOccurrencesOfString:@" Sites" withString:@""];
+
+}
+            
+            
 
 @end

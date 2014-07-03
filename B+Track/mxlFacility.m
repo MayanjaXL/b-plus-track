@@ -11,7 +11,7 @@
 @implementation MXLFacility
 
 
-- (instancetype)initWithName:(NSString *)name level:(NSString*)level district:(NSString*)district subcounty:(NSString*)subcounty ip:(NSString*)ip
+/*- (instancetype)initWithName:(NSString *)name level:(NSString*)level district:(NSString*)district subcounty:(NSString*)subcounty ip:(NSString*)ip
 {
     self = [super init];
     if (self) {
@@ -22,7 +22,8 @@
         self.ip = ip;
     }
     return self;
-}
+}*/
+
 
 
 @end

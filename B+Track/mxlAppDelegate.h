@@ -14,4 +14,7 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic) MXLSession* Session;
 
+/* Methods */
++ (void) setIconBadge;
+
 @end
