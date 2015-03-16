@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-1130" y="1570"/>
         </scene>
-        <!--Navigation Controller - Reporting rate-->
+        <!--Reporting rate-->
         <scene sceneID="28L-Bb-uPU">
             <objects>
                 <navigationController definesPresentationContext="YES" id="yGg-ll-JLZ" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
             </objects>
             <point key="canvasLocation" x="-591" y="883"/>
         </scene>
-        <!--IsVC - Reporting rate-->
+        <!--Reporting rate-->
         <scene sceneID="NS5-2i-kXf">
             <objects>
                 <tableViewController id="1jR-HS-eYy" customClass="MXLKPIsVC" sceneMemberID="viewController">
@@ -267,7 +267,7 @@
             </objects>
             <point key="canvasLocation" x="-77" y="883"/>
         </scene>
-        <!--Stock OutVC - Stock-outs-->
+        <!--Stock-outs-->
         <scene sceneID="9zO-cc-d9S">
             <objects>
                 <tableViewController id="qDR-kZ-Gu3" customClass="MXLStockOutVC" sceneMemberID="viewController">
@@ -350,7 +350,7 @@
             </objects>
             <point key="canvasLocation" x="-109" y="1705"/>
         </scene>
-        <!--Settings View Controller - Settings-->
+        <!--Settings-->
         <scene sceneID="1k9-h3-z3H">
             <objects>
                 <tableViewController id="E6Y-od-nuq" customClass="MXLSettingsViewController" sceneMemberID="viewController">
@@ -399,13 +399,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mbb-Sx-xgh">
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mbb-Sx-xgh">
                                                     <rect key="frame" x="251" y="6" width="51" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </switch>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Refresh automatically" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCe-BI-TyH">
                                                     <rect key="frame" x="14" y="11" width="166" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -551,7 +549,7 @@
             </objects>
             <point key="canvasLocation" x="511" y="-98"/>
         </scene>
-        <!--View Controller - About weekly reporting-->
+        <!--About weekly reporting-->
         <scene sceneID="BwV-CG-qnA">
             <objects>
                 <viewController id="Z7x-kD-WNZ" sceneMemberID="viewController">
@@ -565,11 +563,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_ribbon" translatesAutoresizingMaskIntoConstraints="NO" id="qSs-Cf-llP">
                                 <rect key="frame" x="0.0" y="66" width="320" height="502"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ukk-kr-Yf5">
                                 <rect key="frame" x="0.0" y="57" width="320" height="511"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">About B+Track
@@ -644,7 +640,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="1470" y="-478"/>
         </scene>
-        <!--View Controller - About this app-->
+        <!--About this app-->
         <scene sceneID="OGW-F8-eHm">
             <objects>
                 <viewController id="LVn-sl-rNz" sceneMemberID="viewController">
@@ -658,11 +654,9 @@ Cg
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_ribbon" translatesAutoresizingMaskIntoConstraints="NO" id="mpC-i0-Iwi">
                                 <rect key="frame" x="0.0" y="66" width="320" height="502"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLk-uP-NRl">
                                 <rect key="frame" x="0.0" y="66" width="320" height="258"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">B+ Tracker for iOS  (C) 2014 MXL, University of California, San Francisco, Makerere University School of Public Health  Some icons provided by http://icons8.com  </string>
@@ -698,7 +692,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="1030" y="-468"/>
         </scene>
-        <!--Entity SelectionVC - Select National, District or IP-->
+        <!--Select National, District or IP-->
         <scene sceneID="fA1-VQ-1NZ">
             <objects>
                 <tableViewController storyboardIdentifier="SelectALevel" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="22X-ue-1i2" customClass="MXLEntitySelectionVC" sceneMemberID="viewController">
@@ -746,7 +740,6 @@ Cg
                     </tableView>
                     <navigationItem key="navigationItem" title="Select National, District or IP" id="S2r-gn-msM"/>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="segSelection" destination="tBc-aT-aKX" id="W4F-Dv-piy"/>
                         <outlet property="tableView" destination="xGg-I6-C8W" id="M6O-3n-vBE"/>
@@ -756,7 +749,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="1222" y="220"/>
         </scene>
-        <!--Week SelectionVC - Select a week-->
+        <!--Select a week-->
         <scene sceneID="u7W-Fo-45X">
             <objects>
                 <tableViewController storyboardIdentifier="SelectAWeek" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="p4m-UB-IKT" customClass="MXLWeekSelectionVC" sceneMemberID="viewController">
@@ -801,7 +794,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="763" y="567"/>
         </scene>
-        <!--Navigation Controller - Settings-->
+        <!--Settings-->
         <scene sceneID="b6Q-Bl-Vel">
             <objects>
                 <navigationController definesPresentationContext="YES" id="G2c-Vj-wKA" sceneMemberID="viewController">
@@ -818,7 +811,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="28" y="-98"/>
         </scene>
-        <!--Navigation Controller - Stock-outs-->
+        <!--Stock-outs-->
         <scene sceneID="gp2-Sg-riS">
             <objects>
                 <navigationController definesPresentationContext="YES" id="v2q-XU-vRb" sceneMemberID="viewController">
@@ -838,7 +831,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="-607" y="1705"/>
         </scene>
-        <!--Facility ListVC - All Facilities-->
+        <!--All Facilities-->
         <scene sceneID="FSe-GE-ATi">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="uFx-H2-b21" customClass="MXLFacilityListVC" sceneMemberID="viewController">
@@ -916,7 +909,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="763" y="1267"/>
         </scene>
-        <!--Weekly Report ListVC - Weekly reports-->
+        <!--Weekly reports-->
         <scene sceneID="UaB-4y-tM1">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="oj4-XO-ZXN" customClass="MXLWeeklyReportListVC" sceneMemberID="viewController">
@@ -976,21 +969,18 @@ Cg
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqg-zG-Y9u">
                                             <rect key="frame" x="13" y="2" width="206" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtB-ew-AfC">
                                             <rect key="frame" x="13" y="20" width="147" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gd-py-daf">
                                             <rect key="frame" x="173" y="20" width="68" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.5504327416" green="0.0" blue="0.015231229359999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -1026,7 +1016,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="763" y="1986"/>
         </scene>
-        <!--Weekly Report DetailsVW - Details-->
+        <!--Details-->
         <scene sceneID="DBd-Va-wUH">
             <objects>
                 <tableViewController id="jFM-Xr-Rdi" customClass="MXLWeeklyReportDetailsVW" sceneMemberID="viewController">
@@ -1343,7 +1333,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="1339" y="1962"/>
         </scene>
-        <!--Facility DetailsVC - << facility name >>-->
+        <!--<< facility name >>-->
         <scene sceneID="M5m-HV-VkP">
             <objects>
                 <tableViewController id="fkC-1b-b7F" customClass="MXLFacilityDetailsVC" sceneMemberID="viewController">
@@ -1534,7 +1524,7 @@ Cg
                             <outlet property="delegate" destination="fkC-1b-b7F" id="p4i-x7-bis"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="&lt;&lt; facility name >>" id="q4v-jq-UsW">
+                    <navigationItem key="navigationItem" title="&lt;&lt; facility name &gt;&gt;" id="q4v-jq-UsW">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Vei-oH-vxG">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="raf-KN-co9">
                                 <rect key="frame" x="233" y="5" width="71" height="33"/>
@@ -1564,7 +1554,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="1799" y="1267"/>
         </scene>
-        <!--EidVC - EID by CPHL-->
+        <!--EID by CPHL-->
         <scene sceneID="jw3-lG-yEb">
             <objects>
                 <tableViewController id="yYB-we-rGc" customClass="MXLEidVC" sceneMemberID="viewController">
@@ -1717,7 +1707,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="-119" y="3140"/>
         </scene>
-        <!--Navigation Controller - ANC-->
+        <!--ANC-->
         <scene sceneID="4kW-nC-gsE">
             <objects>
                 <navigationController title="ANC" automaticallyAdjustsScrollViewInsets="NO" id="AIR-xC-d84" sceneMemberID="viewController">
@@ -1737,7 +1727,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="-583" y="2481"/>
         </scene>
-        <!--AncVC View Controller - ANC-->
+        <!--ANC-->
         <scene sceneID="XeV-Z8-lEL">
             <objects>
                 <tableViewController id="TY9-86-XxV" customClass="MXLAncVCViewController" sceneMemberID="viewController">
@@ -1918,7 +1908,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="-119" y="2481"/>
         </scene>
-        <!--Navigation Controller - EID-->
+        <!--EID-->
         <scene sceneID="yPO-eJ-6Ba">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wDM-F2-X1o" sceneMemberID="viewController">
@@ -1972,8 +1962,8 @@ Cg
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="41T-We-Tal"/>
-        <segue reference="lo3-e0-Z5X"/>
-        <segue reference="ldq-FC-kOZ"/>
+        <segue reference="ULa-O0-6VY"/>
         <segue reference="D7j-7P-SPH"/>
+        <segue reference="ldq-FC-kOZ"/>
     </inferredMetricsTieBreakers>
 </document>
