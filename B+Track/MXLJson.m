@@ -24,13 +24,13 @@
 
 @implementation MXLJson
 
-NSString * const urlGetEntities2 = @"http://meta-beta.net/services/BPlusWS/getEntities?level=%@&response=application/json";
-NSString * const urlGetWeeks2 = @"http://meta-beta.net/services/BPlusWS/getWeeks?max=%i&response=application/json";
-NSString * const urlGetKPIs2 = @"http://meta-beta.net/services/BPlusWS/getKPI?entity=%@&weekno=%@&response=application/json";
-NSString * const urlGetFacilities2 = @"http://meta-beta.net/services/BPlusWS/getFacilities?entity=%@&response=application/json";
-NSString * const urlGetFacilitiesReported2 = @"http://meta-beta.net/services/BPlusWS/getFRStatus?entity=%@&weekno=%@&reported=%@&response=application/json";
-NSString * const urlGetStockOut = @"http://meta-beta.net/services/BPlusWS/getReports?entity=%@&weekno=%@&option=stockouts&response=application/json";
-NSString * const urlGetWeeklyReports = @"http://meta-beta.net/services/BPlusWS/getReports?entity=%@&weekno=%@&option=reports&response=application/json";
+NSString * const urlGetEntities2 = @"http://services.dhis2sms.ug:8080/services/BPlusWS/getEntities?level=%@&response=application/json";
+NSString * const urlGetWeeks2 = @"http://services.dhis2sms.ug:8080/services/BPlusWS/getWeeks?max=%i&response=application/json";
+NSString * const urlGetKPIs2 = @"http://services.dhis2sms.ug:8080/services/BPlusWS/getKPI?entity=%@&weekno=%@&response=application/json";
+NSString * const urlGetFacilities2 = @"http://services.dhis2sms.ug:8080/services/BPlusWS/getFacilities?entity=%@&response=application/json";
+NSString * const urlGetFacilitiesReported2 = @"http://services.dhis2sms.ug:8080/services/BPlusWS/getFRStatus?entity=%@&weekno=%@&reported=%@&response=application/json";
+NSString * const urlGetStockOut = @"http://services.dhis2sms.ug:8080/services/BPlusWS/getReports?entity=%@&weekno=%@&option=stockouts&response=application/json";
+NSString * const urlGetWeeklyReports = @"http://services.dhis2sms.ug:8080/services/BPlusWS/getReports?entity=%@&weekno=%@&option=reports&response=application/json";
 
 
 
