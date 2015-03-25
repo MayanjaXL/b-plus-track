@@ -44,6 +44,7 @@
     self.categoryProperty = @"district";
     self.lblNoDataMessage = self.lblNoData;
     self.navigationItem.title = @"Weekly reports";
+
     [self.searchDisplayController.searchResultsTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"EntityCell"];
     //    self.searchDisplayController.delegate = self;
     [super viewDidLoad];
