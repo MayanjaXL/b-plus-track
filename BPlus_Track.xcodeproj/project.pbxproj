@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		41039AB41962DFB4000AF3B1 /* UITableViewCell+getIOTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41039AB31962DFB4000AF3B1 /* UITableViewCell+getIOTableView.m */; };
 		41047D5C1949910E00274D68 /* MXLDataRetriever.m in Sources */ = {isa = PBXBuildFile; fileRef = 41047D5B1949910E00274D68 /* MXLDataRetriever.m */; };
-		410E603D1966C625009A8A19 /* MLXKPIsVC2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 410E603C1966C625009A8A19 /* MLXKPIsVC2VC.m */; };
-		410E60401966C6AA009A8A19 /* MXLUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410E603F1966C6AA009A8A19 /* MXLUIViewController.m */; };
 		41153C9A1953289C002FE7DE /* MXListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41153C991953289C002FE7DE /* MXListTableViewController.m */; };
 		41153C9D19532DBA002FE7DE /* MXLDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41153C9C19532DBA002FE7DE /* MXLDetailTableViewController.m */; };
-		4128C88219656166002DF1A5 /* Main_iPad_New.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4128C88119656166002DF1A5 /* Main_iPad_New.storyboard */; };
 		415D660A194B000C00B8B824 /* MXLKPIsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D6609194B000C00B8B824 /* MXLKPIsVC.m */; };
 		415D660D194B0B1E00B8B824 /* MXLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D660C194B0B1E00B8B824 /* MXLSession.m */; };
+		4164F8B81949B0CC002C518D /* MXLWeek.m in Sources */ = {isa = PBXBuildFile; fileRef = 4164F8B71949B0CC002C518D /* MXLWeek.m */; };
 		4164F8BB1949C3C2002C518D /* MXLWeekSelectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4164F8BA1949C3C2002C518D /* MXLWeekSelectionVC.m */; };
 		4165E7A1195303BF00035721 /* MXLWeeklyReportDetailsVW.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E7A0195303BF00035721 /* MXLWeeklyReportDetailsVW.m */; };
 		4165E7A41953040600035721 /* MXLWeeklyReportListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E7A31953040600035721 /* MXLWeeklyReportListVC.m */; };
@@ -24,11 +22,6 @@
 		4183791C194F261C008929F7 /* MXLStockOutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4183791B194F261C008929F7 /* MXLStockOutVC.m */; };
 		4183791F194F672A008929F7 /* MXLFacilityDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4183791E194F672A008929F7 /* MXLFacilityDetailsVC.m */; };
 		4183792219504CD9008929F7 /* MXLJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4183792119504CD9008929F7 /* MXLJson.m */; };
-		418848BB19E065F8006E1890 /* MXLWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418848BA19E065F8006E1890 /* MXLWeek.swift */; };
-		418848C219E0787D006E1890 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418848C119E0787D006E1890 /* NotificationCenter.framework */; };
-		418848C719E0787D006E1890 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418848C619E0787D006E1890 /* TodayViewController.swift */; };
-		418848C919E0787D006E1890 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418848C819E0787D006E1890 /* MainInterface.storyboard */; };
-		418848CC19E0787D006E1890 /* BPlus_Track_Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 418848C019E0787D006E1890 /* BPlus_Track_Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4192CD4519519B1E0078052F /* MXLEidVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192CD4419519B1E0078052F /* MXLEidVC.m */; };
 		4192CD481951C8A00078052F /* MXLWeeklyReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192CD471951C8A00078052F /* MXLWeeklyReport.m */; };
 		41A6C79E194DD0100078C949 /* MXLKPIs.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A6C79D194DD0100078C949 /* MXLKPIs.m */; };
@@ -79,13 +72,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		413C30B319E170FF0010A73A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41EC83AE19483F8B00FEF658 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 41EC83B519483F8B00FEF658;
-			remoteInfo = BPlus_Track;
-		};
 		41EC83E219483F8B00FEF658 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 41EC83AE19483F8B00FEF658 /* Project object */;
@@ -95,38 +81,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		418848D219E0787E006E1890 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				418848CC19E0787D006E1890 /* BPlus_Track_Today.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		41039AB21962DFB4000AF3B1 /* UITableViewCell+getIOTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+getIOTableView.h"; sourceTree = "<group>"; };
 		41039AB31962DFB4000AF3B1 /* UITableViewCell+getIOTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+getIOTableView.m"; sourceTree = "<group>"; };
 		41047D5A1949910E00274D68 /* MXLDataRetriever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLDataRetriever.h; sourceTree = "<group>"; };
 		41047D5B1949910E00274D68 /* MXLDataRetriever.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLDataRetriever.m; sourceTree = "<group>"; };
-		410E603B1966C625009A8A19 /* MLXKPIsVC2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXKPIsVC2VC.h; sourceTree = "<group>"; };
-		410E603C1966C625009A8A19 /* MLXKPIsVC2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXKPIsVC2VC.m; sourceTree = "<group>"; };
-		410E603E1966C6AA009A8A19 /* MXLUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLUIViewController.h; sourceTree = "<group>"; };
-		410E603F1966C6AA009A8A19 /* MXLUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLUIViewController.m; sourceTree = "<group>"; };
 		41153C981953289C002FE7DE /* MXListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXListTableViewController.h; sourceTree = "<group>"; };
 		41153C991953289C002FE7DE /* MXListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXListTableViewController.m; sourceTree = "<group>"; };
 		41153C9B19532DBA002FE7DE /* MXLDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLDetailTableViewController.h; sourceTree = "<group>"; };
 		41153C9C19532DBA002FE7DE /* MXLDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLDetailTableViewController.m; sourceTree = "<group>"; };
-		4128C88119656166002DF1A5 /* Main_iPad_New.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad_New.storyboard; sourceTree = "<group>"; };
 		415D6608194B000C00B8B824 /* MXLKPIsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLKPIsVC.h; sourceTree = "<group>"; };
 		415D6609194B000C00B8B824 /* MXLKPIsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLKPIsVC.m; sourceTree = "<group>"; };
 		415D660B194B0B1E00B8B824 /* MXLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLSession.h; sourceTree = "<group>"; };
 		415D660C194B0B1E00B8B824 /* MXLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLSession.m; sourceTree = "<group>"; };
+		4164F8B61949B0CC002C518D /* MXLWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLWeek.h; sourceTree = "<group>"; };
+		4164F8B71949B0CC002C518D /* MXLWeek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLWeek.m; sourceTree = "<group>"; };
 		4164F8B91949C3C2002C518D /* MXLWeekSelectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLWeekSelectionVC.h; sourceTree = "<group>"; };
 		4164F8BA1949C3C2002C518D /* MXLWeekSelectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLWeekSelectionVC.m; sourceTree = "<group>"; };
 		4165E79F195303BF00035721 /* MXLWeeklyReportDetailsVW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLWeeklyReportDetailsVW.h; sourceTree = "<group>"; };
@@ -143,12 +112,6 @@
 		4183791E194F672A008929F7 /* MXLFacilityDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLFacilityDetailsVC.m; sourceTree = "<group>"; };
 		4183792019504CD9008929F7 /* MXLJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLJson.h; sourceTree = "<group>"; };
 		4183792119504CD9008929F7 /* MXLJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLJson.m; sourceTree = "<group>"; };
-		418848BA19E065F8006E1890 /* MXLWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXLWeek.swift; sourceTree = "<group>"; };
-		418848C019E0787D006E1890 /* BPlus_Track_Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BPlus_Track_Today.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		418848C119E0787D006E1890 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		418848C519E0787D006E1890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		418848C619E0787D006E1890 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		418848C819E0787D006E1890 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		4192CD4319519B1E0078052F /* MXLEidVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLEidVC.h; sourceTree = "<group>"; };
 		4192CD4419519B1E0078052F /* MXLEidVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLEidVC.m; sourceTree = "<group>"; };
 		4192CD461951C8A00078052F /* MXLWeeklyReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLWeeklyReport.h; sourceTree = "<group>"; };
@@ -213,14 +176,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		418848BD19E0787D006E1890 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				418848C219E0787D006E1890 /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		41EC83B319483F8B00FEF658 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,24 +223,6 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
-		418848C319E0787D006E1890 /* BPlus_Track_Today */ = {
-			isa = PBXGroup;
-			children = (
-				418848C619E0787D006E1890 /* TodayViewController.swift */,
-				418848C819E0787D006E1890 /* MainInterface.storyboard */,
-				418848C419E0787D006E1890 /* Supporting Files */,
-			);
-			path = BPlus_Track_Today;
-			sourceTree = "<group>";
-		};
-		418848C419E0787D006E1890 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				418848C519E0787D006E1890 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		41A6C799194DC65F0078C949 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,8 +245,6 @@
 				41153C991953289C002FE7DE /* MXListTableViewController.m */,
 				41153C9B19532DBA002FE7DE /* MXLDetailTableViewController.h */,
 				41153C9C19532DBA002FE7DE /* MXLDetailTableViewController.m */,
-				410E603E1966C6AA009A8A19 /* MXLUIViewController.h */,
-				410E603F1966C6AA009A8A19 /* MXLUIViewController.m */,
 			);
 			name = "Base Classes";
 			sourceTree = "<group>";
@@ -325,8 +260,6 @@
 				4183791B194F261C008929F7 /* MXLStockOutVC.m */,
 				4192CD4319519B1E0078052F /* MXLEidVC.h */,
 				4192CD4419519B1E0078052F /* MXLEidVC.m */,
-				410E603B1966C625009A8A19 /* MLXKPIsVC2VC.h */,
-				410E603C1966C625009A8A19 /* MLXKPIsVC2VC.m */,
 			);
 			name = Indicators;
 			sourceTree = "<group>";
@@ -424,7 +357,6 @@
 				41D6AFCE19652AD500A22191 /* App Store Submission */,
 				41EC83BF19483F8B00FEF658 /* BPlus_Track */,
 				41EC83E419483F8B00FEF658 /* B+TrackTests */,
-				418848C319E0787D006E1890 /* BPlus_Track_Today */,
 				41EC83B819483F8B00FEF658 /* Frameworks */,
 				41EC83B719483F8B00FEF658 /* Products */,
 			);
@@ -435,7 +367,6 @@
 			children = (
 				41EC83B619483F8B00FEF658 /* BPlus_Track.app */,
 				41EC83DD19483F8B00FEF658 /* BPlus_TrackTests.xctest */,
-				418848C019E0787D006E1890 /* BPlus_Track_Today.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -447,7 +378,6 @@
 				41EC83BB19483F8B00FEF658 /* CoreGraphics.framework */,
 				41EC83BD19483F8B00FEF658 /* UIKit.framework */,
 				41EC83DE19483F8B00FEF658 /* XCTest.framework */,
-				418848C119E0787D006E1890 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -455,7 +385,6 @@
 		41EC83BF19483F8B00FEF658 /* BPlus_Track */ = {
 			isa = PBXGroup;
 			children = (
-				4128C88119656166002DF1A5 /* Main_iPad_New.storyboard */,
 				41837913194EDF5A008929F7 /* Utils */,
 				41047D59194990F600274D68 /* Misc */,
 				41EC83F41948497D00FEF658 /* Data Models */,
@@ -507,11 +436,12 @@
 				41EC83F61948499F00FEF658 /* mxlFacility.m */,
 				41EC84421948654200FEF658 /* mxlEntity.h */,
 				41EC84431948654200FEF658 /* mxlEntity.m */,
+				4164F8B61949B0CC002C518D /* MXLWeek.h */,
+				4164F8B71949B0CC002C518D /* MXLWeek.m */,
 				41A6C79C194DD0100078C949 /* MXLKPIs.h */,
 				41A6C79D194DD0100078C949 /* MXLKPIs.m */,
 				4192CD461951C8A00078052F /* MXLWeeklyReport.h */,
 				4192CD471951C8A00078052F /* MXLWeeklyReport.m */,
-				418848BA19E065F8006E1890 /* MXLWeek.swift */,
 			);
 			name = "Data Models";
 			sourceTree = "<group>";
@@ -529,35 +459,7 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		41BFA0C819E19CD200B1A82D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		418848BF19E0787D006E1890 /* BPlus_Track_Today */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 418848CF19E0787E006E1890 /* Build configuration list for PBXNativeTarget "BPlus_Track_Today" */;
-			buildPhases = (
-				418848BC19E0787D006E1890 /* Sources */,
-				418848BD19E0787D006E1890 /* Frameworks */,
-				418848BE19E0787D006E1890 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				413C30B419E170FF0010A73A /* PBXTargetDependency */,
-			);
-			name = BPlus_Track_Today;
-			productName = BPlus_Track_Today;
-			productReference = 418848C019E0787D006E1890 /* BPlus_Track_Today.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		41EC83B519483F8B00FEF658 /* BPlus_Track */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41EC83EE19483F8B00FEF658 /* Build configuration list for PBXNativeTarget "BPlus_Track" */;
@@ -565,8 +467,6 @@
 				41EC83B219483F8B00FEF658 /* Sources */,
 				41EC83B319483F8B00FEF658 /* Frameworks */,
 				41EC83B419483F8B00FEF658 /* Resources */,
-				418848D219E0787E006E1890 /* Embed App Extensions */,
-				41BFA0C819E19CD200B1A82D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -605,10 +505,6 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = MXL;
 				TargetAttributes = {
-					418848BF19E0787D006E1890 = {
-						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = PYMA4EMPDL;
-					};
 					41EC83B519483F8B00FEF658 = {
 						DevelopmentTeam = PYMA4EMPDL;
 						SystemCapabilities = {
@@ -637,20 +533,11 @@
 			targets = (
 				41EC83B519483F8B00FEF658 /* BPlus_Track */,
 				41EC83DC19483F8B00FEF658 /* BPlus_TrackTests */,
-				418848BF19E0787D006E1890 /* BPlus_Track_Today */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		418848BE19E0787D006E1890 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				418848C919E0787D006E1890 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		41EC83B419483F8B00FEF658 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -668,7 +555,6 @@
 				41D6AFE919652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.38.png in Resources */,
 				41D6AFE819652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.27.png in Resources */,
 				41D6AFDC19652AF200A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.37.48.png in Resources */,
-				4128C88219656166002DF1A5 /* Main_iPad_New.storyboard in Resources */,
 				41D6AFE619652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.19.png in Resources */,
 				41D6AFE419652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.06.png in Resources */,
 				41D6AFD719652AF200A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.37.21.png in Resources */,
@@ -697,14 +583,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		418848BC19E0787D006E1890 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				418848C719E0787D006E1890 /* TodayViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		41EC83B219483F8B00FEF658 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -720,10 +598,8 @@
 				41A6C79E194DD0100078C949 /* MXLKPIs.m in Sources */,
 				41FC3EE5194C870E0090535D /* MXLTableViewController.m in Sources */,
 				41837919194F19F8008929F7 /* MXLAncVCViewController.m in Sources */,
-				418848BB19E065F8006E1890 /* MXLWeek.swift in Sources */,
 				41EC84441948654200FEF658 /* mxlEntity.m in Sources */,
-				410E60401966C6AA009A8A19 /* MXLUIViewController.m in Sources */,
-				410E603D1966C625009A8A19 /* MLXKPIsVC2VC.m in Sources */,
+				4164F8B81949B0CC002C518D /* MXLWeek.m in Sources */,
 				415D660D194B0B1E00B8B824 /* MXLSession.m in Sources */,
 				4164F8BB1949C3C2002C518D /* MXLWeekSelectionVC.m in Sources */,
 				41EC83CA19483F8B00FEF658 /* mxlAppDelegate.m in Sources */,
@@ -752,11 +628,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		413C30B419E170FF0010A73A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 41EC83B519483F8B00FEF658 /* BPlus_Track */;
-			targetProxy = 413C30B319E170FF0010A73A /* PBXContainerItemProxy */;
-		};
 		41EC83E319483F8B00FEF658 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 41EC83B519483F8B00FEF658 /* BPlus_Track */;
@@ -800,45 +671,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		418848D019E0787E006E1890 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BPlus_Track_Today/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "BPlus_Track_Today-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		418848D119E0787E006E1890 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = BPlus_Track_Today/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "BPlus_Track_Today-Bridging-Header.h";
-			};
-			name = Release;
-		};
 		41EC83EC19483F8B00FEF658 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -858,11 +690,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-<<<<<<< HEAD
-				DEFINES_MODULE = YES;
-=======
 				CURRENT_PROJECT_VERSION = 1.1;
->>>>>>> Version_1-2
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -905,11 +733,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-<<<<<<< HEAD
-				DEFINES_MODULE = YES;
-=======
 				CURRENT_PROJECT_VERSION = 1.1;
->>>>>>> Version_1-2
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -931,22 +755,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
-<<<<<<< HEAD
-				CLANG_ENABLE_MODULES = YES;
-=======
->>>>>>> Version_1-2
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "B+Track/BPlus_Track-Prefix.pch";
 				INFOPLIST_FILE = "B+Track/BPlus_Track-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = BPlus_Track;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "B+Track/BPlus_Track-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -957,23 +773,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
-<<<<<<< HEAD
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEFINES_MODULE = YES;
-=======
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
->>>>>>> Version_1-2
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "B+Track/BPlus_Track-Prefix.pch";
 				INFOPLIST_FILE = "B+Track/BPlus_Track-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = BPlus_Track;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "B+Track/BPlus_Track-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1022,15 +829,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		418848CF19E0787E006E1890 /* Build configuration list for PBXNativeTarget "BPlus_Track_Today" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				418848D019E0787E006E1890 /* Debug */,
-				418848D119E0787E006E1890 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		41EC83B119483F8B00FEF658 /* Build configuration list for PBXProject "BPlus_Track" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

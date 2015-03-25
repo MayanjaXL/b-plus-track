@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MXLWeek.h"
 #import "MXLTableViewController.h"
 
 @class MXLWeekSelectionVC;

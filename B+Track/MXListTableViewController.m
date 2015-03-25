@@ -210,7 +210,6 @@
             
         
         //[object isKindOfClass:[ClassName class]]
-    
         
         NSIndexPath* indexPath = [tableView indexPathForCell:sender];
         customViewController.dataSource = [self getSelectedEntityForIndexPath:indexPath tableView:tableView];

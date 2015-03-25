@@ -7,7 +7,7 @@
 //
 
 #import "MXLWeekSelectionVC.h"
-#import "BPlus_Track-Swift.h"
+#import "MXLWeek.h"
 #import "MXLDataRetriever.h"
 #import "MXLSession.h"
 

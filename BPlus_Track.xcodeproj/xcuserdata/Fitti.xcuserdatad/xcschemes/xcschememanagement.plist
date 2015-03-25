@@ -9,19 +9,9 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>BPlus_Track_Today.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>418848BF19E0787D006E1890</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>41EC83B519483F8B00FEF658</key>
 		<dict>
 			<key>primary</key>

@@ -8,8 +8,8 @@
 
 #import "MXLDataRetriever.h"
 #import "mxlEntity.h"
-#import "BPlus_Track-Swift.h"
-//#import "MXLSession.h"
+#import "MXLWeek.h"
+#import "MXLSession.h"
 #import "MXLKPIs.h"
 #import "mxlAppDelegate.h"
 #import "NSString+Encode.h"
@@ -184,7 +184,7 @@ bool const keepCache = true;
     
     if ([self startOperation:@"background_simulation"]) {
         sleep(5);
-        //        [[MXLSession currentSession] DoCurrentSessionRefreshed];
+        [[MXLSession currentSession] DoCurrentSessionRefreshed];
         [self finishOperation:@"background_simulation"];
     }
     

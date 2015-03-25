@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-=======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
->>>>>>> Version_1-2
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -1971,8 +1965,8 @@ Version 1.2  (C) 2015 MXL, University of California, San Francisco, Makerere
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="41T-We-Tal"/>
-        <segue reference="ULa-O0-6VY"/>
-        <segue reference="D7j-7P-SPH"/>
+        <segue reference="lo3-e0-Z5X"/>
         <segue reference="ldq-FC-kOZ"/>
+        <segue reference="D7j-7P-SPH"/>
     </inferredMetricsTieBreakers>
 </document>

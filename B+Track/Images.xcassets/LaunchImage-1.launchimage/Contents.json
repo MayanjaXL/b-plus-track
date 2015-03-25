@@ -4,41 +4,24 @@
       "extent" : "full-screen",
       "idiom" : "iphone",
       "subtype" : "736h",
-<<<<<<< HEAD
-      "filename" : "iPhone6PlusPortrait.png",
-=======
       "filename" : "META.EOC.B+Track-Startup-Image-iPhone-6-Plus.png",
->>>>>>> Version_1-2
       "minimum-system-version" : "8.0",
       "orientation" : "portrait",
       "scale" : "3x"
     },
     {
-<<<<<<< HEAD
-      "extent" : "full-screen",
-      "idiom" : "iphone",
-      "subtype" : "736h",
-      "filename" : "iPhone6PlusLandscape.png",
-      "minimum-system-version" : "8.0",
-      "orientation" : "landscape",
-=======
       "orientation" : "landscape",
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "8.0",
       "subtype" : "736h",
->>>>>>> Version_1-2
       "scale" : "3x"
     },
     {
       "extent" : "full-screen",
       "idiom" : "iphone",
       "subtype" : "667h",
-<<<<<<< HEAD
-      "filename" : "iPhone6Portrait.png",
-=======
       "filename" : "META.EOC.B+Track-Startup-Image-iPhone-6.png",
->>>>>>> Version_1-2
       "minimum-system-version" : "8.0",
       "orientation" : "portrait",
       "scale" : "2x"
@@ -48,10 +31,6 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-<<<<<<< HEAD
-      "filename" : "file@2x-1.png",
-=======
->>>>>>> Version_1-2
       "scale" : "2x"
     },
     {
@@ -101,10 +80,6 @@
       "orientation" : "portrait",
       "idiom" : "iphone",
       "extent" : "full-screen",
-<<<<<<< HEAD
-      "filename" : "file@2x.png",
-=======
->>>>>>> Version_1-2
       "scale" : "2x"
     },
     {

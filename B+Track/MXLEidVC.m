@@ -10,7 +10,7 @@
 #import "mxlAppDelegate.h"
 #import "MXLSession.h"
 #import "MXLDataRetriever.h"
-#import "BPlus_Track-Swift.h"
+#import "MXLWeek.h"
 #import "mxlEntity.h"
 #import "MXLEntitySelectionVC.h"
 #import "MXLWeekSelectionVC.h"
