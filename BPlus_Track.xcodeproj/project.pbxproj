@@ -45,6 +45,16 @@
 		41D6AFE719652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.23.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D6AFE119652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.23.png */; };
 		41D6AFE819652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.27.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D6AFE219652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.27.png */; };
 		41D6AFE919652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.38.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D6AFE319652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.38.png */; };
+		41E882341AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.28.57.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E882291AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.28.57.png */; };
+		41E882351AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.03.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E8822A1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.03.png */; };
+		41E882361AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.17.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E8822B1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.17.png */; };
+		41E882371AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.24.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E8822C1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.24.png */; };
+		41E882381AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.27.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E8822D1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.27.png */; };
+		41E882391AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.43.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E8822F1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.43.png */; };
+		41E8823A1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.50.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E882301AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.50.png */; };
+		41E8823B1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.58.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E882311AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.58.png */; };
+		41E8823C1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.32.04.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E882321AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.32.04.png */; };
+		41E8823D1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.32.08.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E882331AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.32.08.png */; };
 		41EC83BA19483F8B00FEF658 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC83B919483F8B00FEF658 /* Foundation.framework */; };
 		41EC83BC19483F8B00FEF658 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC83BB19483F8B00FEF658 /* CoreGraphics.framework */; };
 		41EC83BE19483F8B00FEF658 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC83BD19483F8B00FEF658 /* UIKit.framework */; };
@@ -158,6 +168,16 @@
 		41D6AFE119652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot 3 Jul 2014 08.33.23.png"; sourceTree = "<group>"; };
 		41D6AFE219652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot 3 Jul 2014 08.33.27.png"; sourceTree = "<group>"; };
 		41D6AFE319652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot 3 Jul 2014 08.33.38.png"; sourceTree = "<group>"; };
+		41E882291AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.28.57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 18 Mar 2015 09.28.57.png"; sourceTree = "<group>"; };
+		41E8822A1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 18 Mar 2015 09.29.03.png"; sourceTree = "<group>"; };
+		41E8822B1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 18 Mar 2015 09.29.17.png"; sourceTree = "<group>"; };
+		41E8822C1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 18 Mar 2015 09.29.24.png"; sourceTree = "<group>"; };
+		41E8822D1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 18 Mar 2015 09.29.27.png"; sourceTree = "<group>"; };
+		41E8822F1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 18 Mar 2015 09.31.43.png"; sourceTree = "<group>"; };
+		41E882301AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 18 Mar 2015 09.31.50.png"; sourceTree = "<group>"; };
+		41E882311AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 18 Mar 2015 09.31.58.png"; sourceTree = "<group>"; };
+		41E882321AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.32.04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 18 Mar 2015 09.32.04.png"; sourceTree = "<group>"; };
+		41E882331AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.32.08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 18 Mar 2015 09.32.08.png"; sourceTree = "<group>"; };
 		41EC83B619483F8B00FEF658 /* BPlus_Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPlus_Track.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EC83B919483F8B00FEF658 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41EC83BB19483F8B00FEF658 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -340,6 +360,8 @@
 		41D6AFCF19652ADF00A22191 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				41E882281AB9628D0008C759 /* iPhone 6 */,
+				41E8822E1AB9628D0008C759 /* iPhone 6Plus */,
 				41D6AFDD19652AFC00A22191 /* iPhone 5 */,
 				41D6AFD019652AF200A22191 /* iPhone 4 */,
 			);
@@ -370,6 +392,30 @@
 				41D6AFE319652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.38.png */,
 			);
 			path = "iPhone 5";
+			sourceTree = "<group>";
+		};
+		41E882281AB9628D0008C759 /* iPhone 6 */ = {
+			isa = PBXGroup;
+			children = (
+				41E882291AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.28.57.png */,
+				41E8822A1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.03.png */,
+				41E8822B1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.17.png */,
+				41E8822C1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.24.png */,
+				41E8822D1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.27.png */,
+			);
+			path = "iPhone 6";
+			sourceTree = "<group>";
+		};
+		41E8822E1AB9628D0008C759 /* iPhone 6Plus */ = {
+			isa = PBXGroup;
+			children = (
+				41E8822F1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.43.png */,
+				41E882301AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.50.png */,
+				41E882311AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.58.png */,
+				41E882321AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.32.04.png */,
+				41E882331AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.32.08.png */,
+			);
+			path = "iPhone 6Plus";
 			sourceTree = "<group>";
 		};
 		41EC83AD19483F8B00FEF658 = {
@@ -609,8 +655,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E882351AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.03.png in Resources */,
+				41E8823D1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.32.08.png in Resources */,
 				41CA6FE71963EF4100A66644 /* Documentation.rtf in Resources */,
 				41D6AFD819652AF200A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.37.27.png in Resources */,
+				41E882361AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.17.png in Resources */,
+				41E882341AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.28.57.png in Resources */,
+				41E8823C1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.32.04.png in Resources */,
 				41D6AFDB19652AF200A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.37.39.png in Resources */,
 				41EC83D019483F8B00FEF658 /* Main_iPad.storyboard in Resources */,
 				41EC83D819483F8B00FEF658 /* Images.xcassets in Resources */,
@@ -623,9 +674,14 @@
 				41D6AFD719652AF200A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.37.21.png in Resources */,
 				41D6AFE519652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.13.png in Resources */,
 				41EC83CD19483F8B00FEF658 /* Main_iPhone.storyboard in Resources */,
+				41E882391AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.43.png in Resources */,
+				41E882381AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.27.png in Resources */,
+				41E882371AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.29.24.png in Resources */,
 				41D6AFDA19652AF200A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.37.37.png in Resources */,
 				41D6AFE719652AFC00A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.33.23.png in Resources */,
+				41E8823A1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.50.png in Resources */,
 				41D6AFD919652AF200A22191 /* iOS Simulator Screen shot 3 Jul 2014 08.37.33.png in Resources */,
+				41E8823B1AB9628D0008C759 /* iOS Simulator Screen Shot 18 Mar 2015 09.31.58.png in Resources */,
 				41EC83C419483F8B00FEF658 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -802,7 +858,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+<<<<<<< HEAD
 				DEFINES_MODULE = YES;
+=======
+				CURRENT_PROJECT_VERSION = 1.1;
+>>>>>>> Version_1-2
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -820,7 +880,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = BPlus_Track;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos8.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
 			};
@@ -845,7 +905,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+<<<<<<< HEAD
 				DEFINES_MODULE = YES;
+=======
+				CURRENT_PROJECT_VERSION = 1.1;
+>>>>>>> Version_1-2
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -856,7 +920,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = BPlus_Track;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos8.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -867,7 +931,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+<<<<<<< HEAD
 				CLANG_ENABLE_MODULES = YES;
+=======
+>>>>>>> Version_1-2
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -890,10 +957,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+<<<<<<< HEAD
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEFINES_MODULE = YES;
+=======
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+>>>>>>> Version_1-2
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "B+Track/BPlus_Track-Prefix.pch";
 				INFOPLIST_FILE = "B+Track/BPlus_Track-Info.plist";
